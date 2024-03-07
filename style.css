@@ -1,0 +1,323 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border: solid;
+    box-sizing: border-box;
+
+}
+
+/* Colors */
+
+:root{
+    --clr--dark: #100c0b;
+    --clr--red: #ed1d0a;
+    --clr--pink: #f9a5a3;
+    --clr--white: #ffffff;
+}
+
+section img{
+    width: 300px;
+    height: 200px;
+}
+
+
+/** CSS Home **/
+
+#header{
+    border-color: rgb(22, 189, 80);
+    width: 100%;
+    background-image: url(./Assets/Home/Img_home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.homeTop{
+    display: flex;
+}
+
+nav{
+    width: 100%;
+}
+
+header nav{
+    padding: 40px;
+}
+
+
+header li{
+    list-style: none;
+    display: inline-block;   
+    padding: 0 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    color: black;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+
+.languages{
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    width: 20%;
+
+}
+
+.languages h5{
+    width: 10%;
+    text-align: center;
+}
+
+/* CSS MAIN */
+
+main{
+    width: 100%;
+    border-color: aqua;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.blueColor{
+    border-color: aqua;
+}
+
+#titleHome{
+    width: 60%;
+    padding: 5%;
+    margin: 5%;
+}
+
+#rightBoxes{
+    position: absolute;
+    width: 30%;
+    top: 300px;
+    right: 10px;
+    height: 50%;
+}
+
+button{
+    width: 20%;
+    height: 15%;
+    border: var(--clr--white);
+    color: var(--clr--white);
+}
+
+
+/* CSS PROJECTS */
+
+.home{
+    background-image: url(./Assets/Projects/opacasinthehills.pgn);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Border Colors 
+
+header nav ul{
+    border-color: greenyellow;
+}
+
+main{
+    border-color: aqua;
+}
+
+#tittleHome{
+    border-color: aquamarine;
+}
+
+#rightBoxes{
+    border-color: blueviolet;
+}
+
+h1{
+    border-color: yellow;
+}
+
+h2{
+    border-color: orange;
+}
+
+h3{
+    border-color: aquamarine;
+}
+
+p{
+    border-color: white;
+}
+
+ul{
+    border-color: chartreuse;
+}
+
+li{
+    border-color: cornflowerblue;
+}
+
+a{
+    border-color: brown;
+    color: white;
+}
+
+img{
+    border-color: darksalmon;
+}
+
+
+/* Sections */
+
+#firstSection{
+    background-color: var(--clr--red);
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+#secondSection{
+    background-color: var(--clr--pink);
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+
+}
+
+#thirdSection{
+    height: 1400px;
+    background-color: var(--clr--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    color: var(--clr--white);
+}
+
+#secondProject{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.posterMovie{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.currentProjects{
+    display: flex;
+    
+}
+#thirdSection img{
+    width: 60%;
+    height: auto;
+}
+
+#forthSection{
+    display: flex;
+    padding: 40px;
+    background-color: var(--clr--pink);
+    
+}
+
+#forthSection button{
+    padding: 15px;
+    width: 100px;
+    align-items: center;
+    margin: 20%;
+    
+}
+
+#fifthSection{
+    width: 100%;
+    padding: 150px;
+    background-image: url(./Assets/WhoWeAre/teamhorizon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 50px;
+    background-color: var(--clr--red);
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logoFooter{
+    align-self: center;
+}
+.linksFooter ul{
+    justify-content: center;
+}
+.iconsFooter{
+    display: flex;
+    justify-content: space-around;
+}
+.terms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+

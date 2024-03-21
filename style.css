@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 *{
     list-style: none;
     text-decoration: none;
-    border: solid;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
+
 
 }
 
-/* Colors */
+
+a, h1{
+
+    color: var(--clr--white);
+    text-decoration: none;
+    font-family: "Libre Bodoni", serif;
+    cursor: pointer;
+
+}
 
 :root{
     --clr--dark: #100c0b;
@@ -15,309 +29,984 @@
     --clr--white: #ffffff;
 }
 
-section img{
-    width: 300px;
-    height: 200px;
+.icon{
+    color: var(--clr--white);
+    font-size: 20px;
 }
 
-
-/** CSS Home **/
-
-#header{
-    border-color: rgb(22, 189, 80);
+.footerHr{
     width: 100%;
+    height: 30px;
+}
+
+/* MAIN SECTION */
+
+/* Starts Background Images Mains */
+
+.main{
     background-image: url(./Assets/Home/Img_home.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
-.homeTop{
-    display: flex;
-}
-
-nav{
-    width: 100%;
-}
-
-header nav{
-    padding: 40px;
-}
-
-
-header li{
-    list-style: none;
-    display: inline-block;   
-    padding: 0 20px;
-}
-
-nav li a{
-    text-decoration: none;
-    transition: all 0.5s ease 0s;
-    color: black;
-}
-
-.links{
-    display: flex;
-    justify-content: flex-end;
-    width: 70%;
-}
-
-
-.languages{
-    display: flex;
-    justify-content: flex-end;
-    align-items: right;
-    width: 20%;
-
-}
-
-.languages h5{
-    width: 10%;
-    text-align: center;
-}
-
-/* CSS MAIN */
-
-main{
-    width: 100%;
-    border-color: aqua;
-}
-
-.mainContent{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-.blueColor{
-    border-color: aqua;
-}
-
-#titleHome{
-    width: 60%;
-    padding: 5%;
-    margin: 5%;
-}
-
-#rightBoxes{
-    position: absolute;
-    width: 30%;
-    top: 300px;
-    right: 10px;
-    height: 50%;
-}
-
-button{
-    width: 20%;
-    height: 15%;
-    border: var(--clr--white);
-    color: var(--clr--white);
-}
-
-
-/* CSS PROJECTS */
-
-.home{
-    background-image: url(./Assets/Projects/opacasinthehills.pgn);
+#projects{
+    background-image: url(/Assets/projects/opacasinthehills.pgn);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#howWeWork{
+    background-image: url(/Assets/howWeWork/Still\ D07___.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact{
+    background-image: url(/Assets/contact/Still\ P08___.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#aboutUs{
+    background-image: url(/Assets/whoWeAre/meeting.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#whoWeAre{
+    background-image: url(/Assets/howWeWork/S11.\ All\ we\ have\ is\ us._1.12.1___.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ourStory{
+    background-image: url(/Assets/ourStory/DSC00279.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* Ends Background Images Mains */
+
+/* Starts Rest of Main Section */
+
+
+.main header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    height: 15%;
+}
+
+.main .logo, footer .logo{
+    height: 100%;
+}
+
+.main .logo img, footer .logo img{
+    width: 100%;
+    height: 100%;
+    margin-left: 83px;
+}
+
+.main .linksHeader{
+    display: flex;
+    gap: 50px;
+    width: 75%;
+    justify-content: flex-end;
+}
+
+.main .linksHeader a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.main .navbar ul, .main .languages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 1rem;
+}
+
+.main .languages{
+    gap: 10px !important;
+    color: white;
+    font-weight: bold;
+}
+
+.main .languages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .menus{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px !important;
+
+}
+
+
+
+.mainSection{
+width: 100%;
+height: 85%;
+display: flex;
+padding: 5%;
+justify-content: space-between;
+position: relative;
+}
+
+
+.mainSectionBox{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+#equalFooterSticked{
+    transform: translateX(70px);
+}
+
+.mainSection .title{
+width: 75%;
+height: 80%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.mainSection .title h1{
+
+text-align: center;
+font-size: 3rem;
+margin-top: 80px;
+margin-bottom: 20px;
+margin-left: 83px;
+color: white;
+}
+
+.logo{
+    width: 150px;
+    height: 150;
+}
+
+.mainSection .title a{
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 17%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Rects */
+
+.main .mainSection #redRect{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr--red);
+    width: 27.5%;
+    height: 15%;
+}
+
+
+
+/* Intro Section */
+
+.introSection{
+    background-color: var(--clr--red);
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5%;
+    color: var(--clr--white);
+}
+
+.introSection .introSectionBox{
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.introSection .introSectionBox .introSectionTextBox{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5%;
+    gap: 15px;
+}
+
+
+.introSection .introSectionBox .introSectionImage{
+    width: 40%;
+    transform: translateY(100px);
+}
+
+.introSection .introSectionTextBox h2{
+    font-size: 2.5rem;
+}
+
+.introSection .introSectionTextBox h3{
+    font-size: 1.3rem;
+}
+
+.introSection .introSectionTextBox a{
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Projects Section */
+
+.introSectionProjectsBox{
+   background-color: var(--clr--dark);
+   color: var(--clr--white);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 7%;
+}
+
+.introSectionProjects .introSectionProjectsTextBox{
+    width: 50%;
+    padding: 3%;
+ }
+
+ .introSectionProjects .introSectionProjectsImage{
+    width: 50%;
+    padding: 3%;
+ }
+
+ .introSectionProjects .introSectionProjectsImage #introSectionProjectsImage{ 
+    width: 100%;
+    height: 90%;
+ }
+
+ .divLine{
+    width: 80%;
+    align-items: center;
+}
+
+ .introSectionProjectsLine{
+    width: 60%;
+    height: 2px;
+    color: var(--clr--white);
+}
+
+
+.main .mainSection #darkRect{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr--dark);
+    width: 27.5%;
+    height: 15%;
+}
+
+/* What We Do Section - HOW WE WORK */
+
+.whatWeDoSection{
+    background-color: var(--clr--pink);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5%;
+    color: var(--clr--dark);
+}
+
+.secondSectionOurApproach #redRect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--clr--red);
+    width: 27.5%;
+    height: 15%;
+}
+
+.whatWeDoSectionBox{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    gap: 30px;
+}
+
+.whatWeDoSectionTexts{
+    color: var(--clr--dark);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 20px;
+}
+
+
+
+.whatWeDoSection #darkRect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--clr--dark);
+    width: 27.5%;
+    height: 15%;
+}
+
+.introSectionOurApproachTextBox{
+    background-color: var(--clr--red);
+    color: var(--clr--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+ }
+
+ .introSectionOurApproachText{
+    background-color: var(--clr--red);
+    color: var(--clr--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7%;
+    align-items: center;
+ }
+
+ .introSectionOurApproachText h2{
+   font-size: 1.5rem;
+ }
+
+.secondSectionOurApproach{
+    background-color: var(--clr--dark);
     width: 100%;
     height: auto;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Border Colors 
-
-header nav ul{
-    border-color: greenyellow;
-}
-
-main{
-    border-color: aqua;
-}
-
-#tittleHome{
-    border-color: aquamarine;
-}
-
-#rightBoxes{
-    border-color: blueviolet;
-}
-
-h1{
-    border-color: yellow;
-}
-
-h2{
-    border-color: orange;
-}
-
-h3{
-    border-color: aquamarine;
-}
-
-p{
-    border-color: white;
-}
-
-ul{
-    border-color: chartreuse;
-}
-
-li{
-    border-color: cornflowerblue;
-}
-
-a{
-    border-color: brown;
-    color: white;
-}
-
-img{
-    border-color: darksalmon;
-}
-
-
-/* Sections */
-
-#firstSection{
-    background-color: var(--clr--red);
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-}
-
-.flexColumn{
     display: flex;
     flex-direction: column;
 }
 
-#secondSection{
-    background-color: var(--clr--pink);
-    display: flex;
-    flex-direction: row;
-    height: 350px;
-
-}
-
-#thirdSection{
-    height: 1400px;
+ .secondSectionOurApproachBox{
     background-color: var(--clr--dark);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--clr--white);
+    align-items: center;
+}
+
+.secondSectionOurAppreachBoxText{
+    transform: translateX(250px);
+} 
+.secondSectionOurApproachBoxImage img{
+    width: 100%;
+    height: auto;
+    
+} 
+
+.secondSectionOurApproachBox h1{
+    font-size: 3rem;
+    color: var(--clr--white);
+    font-weight: bolder;
+}
+
+.thirdSectionOurApproachBox h1{
+    font-size: 3rem;
+    color: var(--clr--white);
+    font-weight: bolder;
+}
+
+.thirdSectionOurAppreach{
+    
+    background-color: var(--clr--red);
+}
+
+.thirdSectionOurAppreachBox{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--clr--red);
+    color: var(--clr--white);
+    align-items: center;
+}
+
+.thirdSectionOurAppreachBoxText{
+    transform: translateX(-250px)
+} 
+
+.thirdSectionOurApproachBoxImage img{
+    width: 100%;
+    height: auto;
+    
+} 
+
+.thirdSectionOurApproachBox h1{
+    font-size: 3rem;
+    color: var(--clr--white);
+    font-weight: bolder;
+}
+
+
+.forthSectionOurApproach{
+    background-color: var(--clr--dark);
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 40px;
+}
+
+ .forthSectionOurApproachBox{
+    background-color: var(--clr--dark);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
     color: var(--clr--white);
+    align-items: center;
+}
+
+.forthSectionOurAppreachBoxText{
+    transform: translateX(250px);
+} 
+.forthSectionOurApproachBoxImage img{
+    width: 100%;
+    height: auto;
+    
+} 
+
+.forthSectionOurApproachBox h1{
+    font-size: 3rem;
+    color: var(--clr--white);
+    font-weight: bolder;
+}
+/* Current Projects Section */
+
+.currentProjectsSection{
+    background-color: var(--clr--dark);
+    width: 100vw;
+    height: 1600px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5%;
+    color: var(--clr--white);
+}
+
+.currentProjectsSectionTitle{
+    width: 100%;
+}
+
+.currentProjectsSection .movies{
+    display: flex;
+    flex-direction: column;
+    color: var(--clr--white);
+    width: 100%;
+    padding: 5%;
+    gap: 25px;
+}
+
+.currentProjectsSection .movies .moviesBoxes{
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.moviesBoxes .moviesBoxesImages{
+    width: 80%;
+}
+
+.moviesBoxes .projectTexts{
+    width: 20%;
+    transform: translateX(150px);
+}
+
+#secondProjectText{
+    transform: translateX(-200px);
+}
+
+.moviesBoxes .projectTexts a{
+    text-decoration: underline;
 }
 
 #secondProject{
-    display: flex;
     flex-direction: row-reverse;
 }
-.posterMovie{
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-}
 
-.currentProjects{
-    display: flex;
-    
-}
-#thirdSection img{
-    width: 60%;
+
+.currentProjectsSection img{
+    width: 85%;
     height: auto;
 }
 
-#forthSection{
-    display: flex;
-    padding: 40px;
+
+.currentProjectsSection #pinkRect{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     background-color: var(--clr--pink);
-    
+    width: 27.5%;
+    height: 5%;
+}
+/* Follow Us Section */
+
+.followUsSection{
+    background-color: var(--clr--pink);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 5%;
+    color: var(--clr--dark);
 }
 
-#forthSection button{
-    padding: 15px;
-    width: 100px;
-    align-items: center;
-    margin: 20%;
-    
+#followUsSectionText{
+    transform: translateX(60px);
+    margin-top: 10px;
 }
 
-#fifthSection{
-    width: 100%;
-    padding: 150px;
-    background-image: url(./Assets/WhoWeAre/teamhorizon.jpg);
+.followUsSection a{
+    border: 1px solid var(--clr--dark);
+    color: var(--clr--dark);
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 15%;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+/* Work With Us Section */
+
+.workWithUsSection{
+    background-image: url(/Assets/whoWeAre/teamhorizon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
 }
 
+.workWithUsSection .workWithUsSectionTexts{
+    margin-left: 20%;
+    font-size: 1.5rem;
+    color: var(--clr--white);
+    font-weight: bolder;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
+.workWithUsSection .workWithUsSectionTexts a{
+    text-decoration: underline;
+}
 
 /* Footer */
 
-footer{
-    width: 100%;
-    padding: 50px;
+
+.footerSection{
     background-color: var(--clr--red);
-
-}
-
-.footer{
     display: flex;
     justify-content: space-around;
+    width: 100vw;
+    height: auto;
+    padding: 5%;
+    color: var(--clr--white);
 }
 
-#logoFooter{
-    align-self: center;
+.footerSectionLinksSocialBoxLinks li{
+    margin-top: 3px;
 }
-.linksFooter ul{
-    justify-content: center;
+
+.footerSectionLinksSocialBoxPolitcs li{
+    margin-top: 3px;
 }
-.iconsFooter{
+
+.footerSection .footerSectionLinksSocialBox .footerSectionLinksSocialBoxSocialMedias{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 5px;
 }
-.terms{
+
+.equalFooter{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 30px;
+}
+
+.footerSection #whiteRect{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr--pink);
+    width: 27.5%;
+    height: 15%;
+}
+
+/* About Us Section */
+
+.equalSymbols{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.introSectionBoxAboutUs{
+    background-color: var(--clr--red);
+    color: var(--clr--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7%;
     align-items: center;
-    gap: 5px;
+ }
+ 
+ .introSectionBoxAboutUs .introSectionBoxAboutUsTexts{
+     width: 80%;
+     padding: 3%;
+  }
+ 
+.introSectionBoxAboutUs .equalFooter{
+    width: 20%;
+    padding: 3%;
+}
+ 
+
+.boxSection{
+    background-color: var(--clr--pink);
+    color: var(--clr--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7%;
+    align-items: center;
+ }
+
+ .boxSection .boxSectionImage{
+    width: 40%;
+}
+
+ .boxSection .boxSectionTexts{
+    width: 60%;
+    padding: 4%;
+    color: var(--clr--dark);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boxSection .boxSectionTexts h2{
+    font-size: 1.8rem;
+}
+
+.boxSection .boxSectionTexts h3{
+    font-size: 1.4rem;
+}
+
+.boxSectionTextsButtons {
+    display: flex;
+    gap: 30px;
+}
+
+.boxSectionTextsButtons a{
+    border: 1px solid var(--clr--dark);
+    color: var(--clr--dark);
+    padding: 15px 30px;
+    text-align: center;
+}
+
+
+.valuesSection{
+    background-color: var(--clr--dark);
+    color: var(--clr--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+
+ .valuesSection .valuesSectionTexts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 65%;
+    gap: 10px;
+    margin-top: 60px;
+
+ }
+
+ .valuesSection .valuesSectionBox{
+    color: var(--clr--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 100px;
+    width: 100%;
+    margin-top: 60px;
+
+ }
+
+ .valuesSection .valuesSectionBox .valuesSectionBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+ }
+
+ 
+ #secondBoxAboutUs{
+    flex-direction: row-reverse;
+ }
+
+
+ .valuesSectionBoxesTexts{
+    padding: 5%;
+ }
+
+
+ .valuesSectionBoxesImage img{
+    width: 100%;
+    height: auto;
+ }
+
+
+
+ /* About Us Team */
+
+
+ .ourTeamBigBox{
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    gap: 80px;
+}
+
+ .ourTeamSmallBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+
+
+ }
+
+ .ourTeamPictureAndDescriptionBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+ }
+
+ .ourTeamPictureAndDescriptionBoxTexts h2{
+    font-size: 1.rem;
+    color: var(--clr--dark);
+ }
+
+ .ourTeamPictureAndDescriptionBoxTexts p{
+    font-size: 1.2rem;
+    color: var(--clr--dark);
+ }
+
+
+ #hosamBox{
+    width: 50%;
+    background-color: var(--clr--white);
+    color: var(--clr--white);
+ }
+
+
+
+ 
+ /*
+
+.ourTeamTitle{
+    transform: translateX(-640px);
+} 
+
+*/
+
+
+
+/* OUR STIORY */
+
+#linkOurStory{
+    text-decoration: underline;
+    border: none;
+    transform: translateX(-100px);
+}
+
+.boxSectionOurStoryFirstText{
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 90px;
+    background-color: var(--clr--dark);
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxSectionOurStoryFirstText img{
+    width: 60%;
+    
+}
+.boxSectionOurStoryFirstText h2{
+    color: var(--clr--white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3%;
+    width: 40%;
+    font-size: 1.5rem;
+}
+
+.boxSectionOurStoryFirstText #pinkRect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--clr--pink);
+    width: 27.5%;
+    height: 15%;
+}
+
+.secondBoxSectionOurStory{
+    background-color: var(--clr--pink);
+    display: flex;
+    align-items: center;
+}
+
+.secondBoxSectionOurStory .secondBoxSectionOurStoryDivs{
+    display: flex;
+    width: 100%;    
+    padding: 6%;
+    align-items: center;
+}
+
+.secondBoxSectionOurStory .secondBoxSectionOurStoryDivs .secondBoxSectionOurStoryFirstDiv{ 
+    width: 50%;    
+    padding: 5%;
+}
+
+.secondBoxSectionOurStory .secondBoxSectionOurStoryDivs .secondBoxSectionOurStoryFirstDiv h2{  
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.secondBoxSectionOurStory .secondBoxSectionOurStoryDivs .secondBoxSectionOurStoryFirstDiv p{  
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.secondBoxSectionOurStory .secondBoxSectionOurStoryDivs .secondBoxSectionOurStorySecondDiv{
+    width: 50%;    
+}
+
+.secondBoxSectionOurStory .secondBoxSectionOurStoryDivs .secondBoxSectionOurStorySecondDiv img{
+    width: 600px;
+    height: auto;    
+}
+
+.secondBoxSectionOurStory #redRect{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr--red);
+    width: 27.5%;   
+    height: 15%;   
+}
+
+
+/* CONTACT SECTION */
+
+
+
+.formSectionBox{
+   
+    background-color: var(--clr--white);
+    display: flex;
+    width: 100wv;
+    padding: 7%;
+    color: var(--clr--dark);
+    gap: 40px;
+}
+
+ .formSectionForm{
+    width: 50%; 
+    color: var(--clr--dark);
+   
+}
+
+.formSectionBox .formSectionForm .form input, .formSectionBox .formSectionForm .form textarea{
+   width: 100%;
+   padding: 20px 10px;
+   margin-top: 20px;
 
 }
 
+.formSectionBox .formSectionForm .form #btn{
+    padding: 20px 80px;
+    margin-top: 30px;
+    background-color: var(--clr--white);
+    transform: translateX(400px);
+ }
+
+.mailNumber{
+    width: 50%;    
+
+}
+
+
+
+
+ 
